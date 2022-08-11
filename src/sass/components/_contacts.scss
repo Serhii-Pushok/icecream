@@ -1,0 +1,105 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+.contacts {
+    background-image: linear-gradient(
+    to bottom,
+    var(--primary-bcg-color) 15%,
+    var(--secondary-bcg-color) 15%
+  );
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 320px;
+
+    @media (max-width: 772px) {
+        width: 772px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.contacts__set {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contacts__item {
+    display: block;
+    list-style: none;
+    outline: 1px solid tomato;
+    width: 280px;
+    height: 412px;
+    margin-bottom: 20px;
+}
+
+.contacts__buttons {
+    display: block;
+    
+}
+
+.button {
+    display: block;
+    cursor: pointer;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
