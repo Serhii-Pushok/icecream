@@ -1,3 +1,7 @@
+.advantages {
+    background-color: var(--secondary-bcg-color);
+}
+
 .invisible-advantages{
     display: none;
 }
@@ -108,7 +112,7 @@ color:var(--secondary-text-color);
                     }
  @media screen and (min-width: 1200px) {
     .advantages-list-item {
-     width: calc((100%-32px)/3)
+     width: calc((100% - 32px)/3)
        } 
     .advantages-list-item:first-child {
         padding-right: 115px;
