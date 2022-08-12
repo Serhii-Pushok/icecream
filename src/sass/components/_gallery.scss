@@ -1,0 +1,78 @@
+.gallery {
+    background-color: greenyellow;
+    border: 4px solid darkgreen;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    height: 136px;
+    @media screen and (min-width: 720px){
+    height: 327px;
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 93px;
+        padding-right: 94px;
+        height: 430px;
+    }
+    &__cards {
+        width: 43px;
+        height: 100%;
+        border: 2px solid red;
+        background-color: palevioletred;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 8px;
+        @media screen and (min-width: 768px){
+        width: 105px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 138px
+        }
+    }
+    &__cards-big {
+        width: 90px;
+        height: 100%;
+        border: 2px solid red;
+        background-color: palevioletred;
+        align-items: flex-start;
+        @media screen and (min-width: 768px){
+        width: 214px; 
+        }
+        @media screen and (min-width: 1200px){
+        width: 283px;
+        }
+    }
+    &__cards-ice {
+        width: 43px;
+        height: 43px;
+        border: 1px solid blue;
+        background-color: lightgreen;
+        @media screen and (min-width: 768px){
+        width: 105px;
+        height: 105px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 138px;
+        height: 138px;
+        }
+    }
+    &__cards-ice-big {
+        width: 100%;
+        height: 90px;
+        border: 1px solid blue;
+        background-color: lightgreen;
+        @media screen and (min-width: 480px){
+        width: 90px;
+        height: 90px;
+        }
+        @media screen and (min-width: 768px){
+        width: 214px;
+        height: 214px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 283px;
+        height: 283px;
+        }
+    }
+}
