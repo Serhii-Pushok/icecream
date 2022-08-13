@@ -1,0 +1,108 @@
+<<<<<<< Updated upstream
+=======
+.products__blok{
+  display: flex;
+    justify-content: center;
+  flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+    @media (min-width:768px){
+      flex-direction: row;
+      gap: 30px;
+    }
+    @media (min-width:1200px){
+      margin-left: -32px;
+      margin-top: -32px;
+    }
+}
+.products__link{
+   
+  border-radius: 24px;
+  
+  padding:160px 40px 40px 40px;
+ 
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+    width: 100%;
+  width: 280px;
+  margin-bottom: 160px;
+  
+  // transition: transform 0.5s;
+  transform-style: preserve-3d; 
+  transform: rotateY( 0deg );
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  
+ 
+ @media (min-width:768px) {
+
+  // max-height: 473px;
+  width:224px ;
+  padding:211px 32px 40px 32px;
+  margin-bottom: 0px;
+ 
+    }
+ @media (min-width:1200px) {
+  // max-height:535px ;
+  // max-width: 368px;
+  flex-basis: calc(100% / 3 - 32px);
+  margin-left: 32px;
+  margin-top: 32px;
+  padding:165px 32px 60px 32px;
+ }
+}
+.products__link--ping{
+  background-color: var(--main-bcg-color);
+
+}
+.products__link--coffee{
+  background-color: var(--icecoffee-bcg-color);
+}
+.products__link--green{
+  background-color: var(--milkshakes-bcg-color);
+}
+.products__button{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color:var(--primary-text-color);
+  fill:var(--accent-color);
+}
+.point{
+    display: block;
+    margin: 0 auto;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color:var(--primary-text-color);
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    top: 0;
+    left: 200%;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color:var(--primary-text-color);
+    top: 0;
+    right: 200%;
+
+    }
+  }
+>>>>>>> Stashed changes
