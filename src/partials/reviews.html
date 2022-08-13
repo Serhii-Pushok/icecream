@@ -1,20 +1,33 @@
 <section class="section">
-    <h2 class="visualy-hidden">Customer Reviews</h2>
-    <div class="container one-time">
-        <div>
-            <img src="" alt="Emily photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, deserunt aliquam reprehenderit illo dolores reiciendis maxime velit mollitia debitis labore.</p>
-            <h3>Emily, Los Angeles</h3>
-        </div>
-        <div>
-            <img src="" alt="Kate photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tempora!</p>
-            <h3>Kate, Dnipro</h3>
-        </div>
-        <div>
-            <img src="" alt="Olexandra photo">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et earum, quibusdam officiis quo dolore placeat nulla impedit saepe distinctio rem dolorem est voluptate molestiae nobis. Numquam ea eius ut?</p>
-            <h3>Olexandra, Lviv</h3>
-        </div>
-      </div>
-</section>
+    <div class="reviews">
+        <h2 class="visualy-hidden">Customer Reviews</h2>
+        <div class="one-time">
+                <div class="slick">
+                   <img class="reviews__avatar"
+                   srcset="./images/reviews/emily.jpg 1x, ./images/reviews/emily@2x.jpg 2x"
+                   src="./images/reviews/emily.jpg" 
+                   alt="Emily photo"
+                   loading ="lazy">
+                    <p class="reviews__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, deserunt aliquam reprehenderit illo dolores reiciendis maxime velit mollitia debitis labore.</p>
+                    <h3 class="reviews__author">Emily, Los Angeles</h3>
+                </div>
+                <div class="slick"> 
+                    <img class="reviews__avatar"
+                    srcset="./images/reviews/kate.jpg, ./images/reviews/kate@2x.jpg 2x"
+                    src="./images/reviews/kate.jpg" alt="Kate photo"
+                    loading ="lazy">
+                     <p class="reviews__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tempora!</p>
+                    <h3 class="reviews__author">Kate, New York</h3>
+                </div>
+                <div class="slick"> 
+                    <img class="reviews__avatar"
+                    srcset="./images/reviews/olexandra.jpg 1x, ./images/reviews/olexandra@2x.jpg 2x" 
+                    src="./images/reviews/olexandra.jpg" 
+                    alt="Olexandra photo"
+                    loading ="lazy">
+                    <p class="reviews__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et earum, quibusdam officiis quo dolore placeat nulla impedit saepe distinctio rem dolorem est voluptate molestiae nobis. Numquam ea eius ut?</p>
+                    <h3 class="reviews__author">Olexandra, Chicago</h3>
+                </div>
+              </div> 
+    </div>      
+        </section>
