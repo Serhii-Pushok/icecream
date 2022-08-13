@@ -93,6 +93,11 @@
     @media screen and (min-width: 1200px) {
         margin-top: 40px;
     }
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
 }
 
 .header-button__menu {
