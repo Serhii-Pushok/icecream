@@ -5,14 +5,8 @@
     padding-bottom: 158px;
     background-color: var(--main-bcg-color);
 
-    @media screen and (min-width: 320px) {
-        min-width: 320px;
-        padding-top: 194px;
-        padding-bottom: 158px;
-    }
-
     @media screen and (min-width: 768px) {
-        width: 768;
+        width: 768px;
         padding-top: 102px;
         padding-bottom: 16px;
     }
@@ -52,7 +46,6 @@
         font-weight: 400;
         font-size: 26px;
         line-height: 1.15;
-        letter-spacing: 0.04em;
         text-transform: uppercase;
         color: var(--primary-text-color);
 
@@ -67,7 +60,7 @@
         }
     }
 
-        &__title--dark {
+        &__title--accent {
             font-size: 48px;
             line-height: 0.96;
             color: var(--accent-color);
