@@ -125,7 +125,7 @@
 
     .modal-purchase__checkbox-input:checked + & {
         background: var(--accent-color);
-        background-image: url(../images/checkbox.svg);
+        background-image: url(../images/modal/checkbox.svg);
         background-size: contain;
         border-color: var(--accent-color);
     }
@@ -234,13 +234,13 @@
     display: inline-block;
     height: 15px;
     width: 15px;
-    border: solid 2px var(secondary-text-color);
+    border: solid 2px var(--secondary-text-color);
     border-radius: 50%;
     margin-right: 4px;
 
     .modal-purchase__radio-input:checked + & {
         background: var(--accent-color);
-        background-image: url(../images/checkbox.svg);
+        background-image: url(../images/modal/checkbox.svg);
         background-size: contain;
         border-color: var(--accent-color);
     }
