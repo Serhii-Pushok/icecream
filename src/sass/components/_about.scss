@@ -58,6 +58,10 @@
 
 .about__img {
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+  }
 }
 
 .about__info {
@@ -93,7 +97,7 @@
   line-height: 1.62;
 
   color: var(--additional-text-color);
-  max-width: 240px;
+  max-width: 230px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -112,10 +116,14 @@
   margin-top: 0;
   margin-bottom: 24px;
   color: var(--secondary-text-color);
-  max-width: 250px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 22px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-top: 90px;
+    margin-bottom: 32px;
     line-height: 1.76;
   }
 }
@@ -123,6 +131,10 @@
 .about__text--padding {
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .about__button {
@@ -139,6 +151,15 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .about__icon {
@@ -148,5 +169,29 @@
 .about__wrap {
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+
+.container--padding {
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__overlay {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/about/bgd-about-desktop@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 2dpi) {
+      background-image: url('../images/about/bgd-about-desctop@2x.png');
+    }
   }
 }
