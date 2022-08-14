@@ -1,9 +1,12 @@
 .gallery {
+    perspective: 600px;
+    perspective-origin: 50% 0%; 
     position: relative;
     display: flex;
     justify-content: center;
     gap: 4px;
     height: 136px;
+    padding-top: 2px;
     background-image: linear-gradient(
         to top,
         var(--primary-text-color) 84%,
@@ -50,7 +53,7 @@
     }
         &__cards-ice {
         border-radius: 20px;
-        transition: all 1s ease-out;
+        transition: all 1s linear;
         @media screen and (min-width: 320px){
         width: 43px;
         height: 43px;
@@ -64,7 +67,7 @@
         height: 138px;
         }
         &:hover{
-        transform:rotateY(360deg);  
+        transform: scale3d(1.7, 1.7, 1.7);
         }
     }
     &__cards-big {
@@ -82,7 +85,7 @@
     }
     &__cards-ice-big {
         border-radius: 20px;
-        transition: all 1s ease-out;
+        transition: all 2s linear;
         @media screen and (min-width: 320px){
         width: 90px;
         height: 90px;
@@ -99,6 +102,9 @@
         transform:rotateZ(360deg);  
         }
     }
+    &__cards-ice-scale:hover{
+        transform: scale3d(1.7, 1.7, 1.7);
+    }
     &__cards-top {
         position: relative;
         top: 10px;
@@ -112,8 +118,176 @@
     }
     &__cards-last {
         position: relative;
+        transition: all 2s linear;
         @media screen and (min-width: 768px){
         top: 13px;
         }
     }
+    &__cards-last:hover {
+        transform: scale3d(1.7, 1.7, 1.7);
+    }
+    &__description {
+        overflow: hidden;
+                transition: all 2s linear;
+    }
+    &__description:hover> &__backdrop-desc {
+        opacity: 0.7;
+        display: block;
+    }
+    &__backdrop-desc {
+        position: absolute;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: var(--secondary-bcg-color);
+        padding: 15px 15px;
+        display: none;
+        transition: all 2s linear;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 1.55;
+        font-weight: 700px;
+        letter-spacing: 0.03em;
+        color: palevioletred;
+    }
+
+
+
+
+}
+#butterfly {
+ display: none;
+ position: absolute;
+  width: 500px;
+  height: 312px;
+  -webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+  -ms-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+  transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+  -webkit-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: butterfly 10s linear infinite;
+  animation: butterfly 10s linear infinite;
+  z-index: 10;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+}
+#leftwing {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 312px;
+  background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  -ms-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  -webkit-transform-origin: inherit;
+  -ms-transform-origin: inherit;
+  transform-origin: inherit;
+  -webkit-animation: leftwing 1s linear infinite;
+  animation: leftwing 1s linear infinite;
+}
+#rightwing {
+  position: absolute;
+  left: 175px;
+  top: 0px;
+  width: 200px;
+  height: 312px;
+  background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  -webkit-transform-origin: inherit;
+  -ms-transform-origin: inherit;
+  transform-origin: inherit;
+  -webkit-animation: rightwing 1s linear infinite;
+  animation: rightwing 1s linear infinite;
+
+}
+@-webkit-keyframes butterfly {
+  from {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+}
+@keyframes butterfly {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+  }
+}
+@-webkit-keyframes rightwing {
+  from {
+    -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+  }
+  to {
+    -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+}
+@keyframes rightwing {
+  from {
+    transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+  50% {
+    transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+  }
+  to {
+    transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+  }
+}
+@-webkit-keyframes leftwing {
+  from {
+    -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+  }
+  to {
+    -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  }
+}
+@keyframes leftwing {
+  from {
+    transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+  }
+  to {
+    transform: rotateX(90deg) rotate3d(0, 1, 0, 00deg);
+  }
 }
