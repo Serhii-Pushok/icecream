@@ -31,20 +31,20 @@ p {
 .contacts {
     background-image: linear-gradient(
     to bottom,
-    var(--primary-bcg-color) 23%,
+    var(--primary-text-color) 23%,
     var(--secondary-bcg-color) 23%);
 
     @media (min-width: 768px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-bcg-color) 23%,
+        var(--primary-text-color) 23%,
         var(--secondary-bcg-color) 23%);
     }
 
     @media (min-width: 1200px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-bcg-color) 15%,
+        var(--primary-text-color) 15%,
         var(--secondary-bcg-color) 15%);
     }
 
@@ -225,30 +225,53 @@ p {
         }
     }
 
-
-
     &__button:hover,
     &__button:focus, 
     &__button:active {
-        background-color: var(--accent-color);
-        color: var(--primary-text-color);
+        background-color: #ECEBEB;
+        color: var(--accent-color);
     }
+
+
 
     &__button {
         display: flex;
         cursor: pointer;
+        border: none;
         width: 162px;
         height: 44px;
+        color: var(--accent-color);
         border-radius: 22px;
-        align-items: center;
+        align-items: baseline;
+        padding: 12px 0;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         
     
         @media (min-width: 768px) {
             margin-left: 0;
             margin-right: 0;
+            width: 174px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 168px;
         }
     }
-        
+    
+    &__button--location {
+        background-color: var(--accent-color);
+        color: var(--primary-text-color);
+
+        @media (min-width: 768px) {
+            width: 192px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 198px;
+        }
+    }
 
     &__button:nth-child(2) {
         margin-top: 10px;
@@ -258,6 +281,18 @@ p {
             margin-left: 15px;
         }
     }
+
+    &__button-label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
+    }
+
+    &__icon-arrow {
+        margin-left: 10px;
+    
+    }
 }
 
 
@@ -266,5 +301,11 @@ p {
 
     @media (min-width: 768px) {
         margin-bottom: 12px;
+    }
+}
+
+.contacts__icon-arrow {
+    .contacts__button:hover & {
+        fill: var(--accent-color);
     }
 }
