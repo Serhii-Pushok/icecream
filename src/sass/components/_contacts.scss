@@ -17,8 +17,8 @@ p {
     padding-bottom: 20px;
     width: 320px;
 
-    @media (min-width: 772px) {
-        width: 772px;
+    @media (min-width: 768px) {
+        width: 768px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -34,7 +34,7 @@ p {
     var(--primary-bcg-color) 23%,
     var(--secondary-bcg-color) 23%);
 
-    @media (min-width: 772px) {
+    @media (min-width: 768px) {
         background-image: linear-gradient(
         to bottom,
         var(--primary-bcg-color) 23%,
@@ -54,7 +54,7 @@ p {
         justify-content: center;
         margin-bottom: 32px;
         
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             gap: 32px;
             margin-bottom: 60px;
         }
@@ -71,7 +71,7 @@ p {
         padding: 40px 32px;
         margin-bottom: 20px;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             width: 224px;
             margin-bottom: 0px;
         }
@@ -107,7 +107,7 @@ p {
         width: 80px;
         height: 16px;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             margin-bottom: 32px;
             font-size: 16px;
             width: 73px;
@@ -119,7 +119,7 @@ p {
         width: 130px;
         background-color: var(--milkshakes-bcg-color);
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             width: 138px;
         }
     }
@@ -131,7 +131,7 @@ p {
         font-weight: 500;
         margin-bottom: 8px;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             font-size: 14px;
             margin-bottom: 12px;
         }
@@ -150,7 +150,7 @@ p {
         font-weight: 500;
         color: var(--additional-text-color);
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             font-size: 14px;
             margin-bottom: 32px;
         }
@@ -169,7 +169,7 @@ p {
         color: var(--secondary-text-color);
         border-bottom: 1px solid #E1E1E1;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             font-size: 14px;
             padding: 32px 0px;
         }
@@ -195,7 +195,7 @@ p {
         line-height: 1.5;
         font-weight: 500;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             font-size: 14px;
             padding-top: 32px;
         }
@@ -217,6 +217,16 @@ p {
         color: var(--accent-color);
     }
 
+    &__buttons {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
     &__button:hover,
     &__button:focus, 
     &__button:active {
@@ -224,43 +234,37 @@ p {
         color: var(--primary-text-color);
     }
 
-    &__buttons {
-        @media (min-width: 772px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    &__button {
+        display: flex;
+        cursor: pointer;
+        width: 162px;
+        height: 44px;
+        border-radius: 22px;
+        align-items: center;
+        
+    
+        @media (min-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
         }
     }
+        
 
-    &__buttons .contacts__button + .contacts__button {
+    &__button:nth-child(2) {
         margin-top: 10px;
 
-        @media (min-width: 772px) {
+        @media (min-width: 768px) {
             margin-top: 0px;
             margin-left: 15px;
         }
     }
-
-    &__button {
-        display: flex;
-    }
 }
+
 
 .weekday {
     margin-bottom: 8px;
-}
 
-.button {
-    display: block;
-    cursor: pointer;
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (min-width: 772px) {
-        margin-left: 0;
-        margin-right: 0;
+    @media (min-width: 768px) {
+        margin-bottom: 12px;
     }
 }
