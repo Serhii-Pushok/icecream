@@ -116,15 +116,15 @@
   background-color:var(--primary-text-color);
   fill:var(--secondary-text-color);
   border: none;
+  cursor: pointer;
+}
+.products__link:hover {
+  transform: rotateY( 180deg );
 }
 .products__link-img{
   position: absolute;
   top: -30%;
   left: 0;
- 
-  // @media (min-width:768px){
-  //   top: -22%;
-  // }
   @media (min-width:1200px){
     top: -55%;
   }
