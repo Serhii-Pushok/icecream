@@ -5,6 +5,7 @@
     line-height: 1.86;
     text-align: center;
     margin: 0;
+    margin-bottom: 16px;
 
     color: var(--secondary-text-color);
 }
@@ -72,6 +73,7 @@
     height: 12px;
     color: var(--reviews-slick-point-color);
     border-radius: 50%;
+    opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
@@ -80,6 +82,7 @@
     width: 12px;    
     height: 12px;
     background-repeat: no-repeat;
+    top: 3px;
 }
 
 .reviews__author:before {
@@ -133,4 +136,8 @@
 
 .reviews__title {
     margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
 }
