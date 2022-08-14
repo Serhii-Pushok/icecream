@@ -34,13 +34,12 @@
 }
 
 .footer-title__part1 {
-    min-width: 340px;
+    max-width: 340px;
     margin-bottom: 16px;
     font-family: 'Titan One';
     font-size: 18px;
     text-transform: uppercase;
     color: var(--label-text-color);
-
     @media screen and (min-width: 768px) {
         max-width: 340px;
         margin-bottom: 12px;
@@ -77,6 +76,7 @@
     margin: 40px 0;
     list-style-type: none;
     justify-content: flex-end;
+    align-items: baseline;
     @media screen and (min-width: 1200px) {
         margin: 0;
     }
