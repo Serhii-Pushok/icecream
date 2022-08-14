@@ -1,3 +1,13 @@
+.section-gallery {
+  padding-top: 0;
+  padding-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+      }
+}
+
 .gallery {
     perspective: 600px;
     perspective-origin: 50% 0%; 
@@ -27,8 +37,9 @@
         background-image: linear-gradient(
         to top,
         var(--primary-text-color) 83%,
-        var(--secondary-bcg-color) 15%);
+        var(--secondary-bcg-color) 83%);
     }
+    
     &__cards {
         z-index: 2;
         width: 43px;
