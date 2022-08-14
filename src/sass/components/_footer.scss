@@ -26,7 +26,11 @@
         align-items: center;
     }
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;}
+        max-width: 1200px;
+        padding-bottom: 60px;
+        align-items: flex-end;
+    }
+        
 }
 
 .footer-title__part1 {
@@ -39,11 +43,13 @@
 
     @media screen and (min-width: 768px) {
         max-width: 340px;
+        margin-bottom: 12px;
         font-size: 26px;
         letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
+        margin-bottom: 16px;
         font-weight: 400;
         font-size: 30px;
 }
@@ -71,6 +77,9 @@
     margin: 40px 0;
     list-style-type: none;
     justify-content: flex-end;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .footer-social__item:not(:last-child) {
