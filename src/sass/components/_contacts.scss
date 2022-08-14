@@ -9,9 +9,13 @@ p {
     margin: 0;
 }
 
-.container {
+.container-contacts {
     padding-top: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 320px;
 
     @media (min-width: 768px) {
@@ -305,5 +309,11 @@ p {
 
     @media (min-width: 768px) {
         margin-bottom: 12px;
+    }
+}
+
+.contacts__icon-arrow {
+    .contacts__button:hover & {
+        fill: var(--accent-color);
     }
 }
