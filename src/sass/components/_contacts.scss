@@ -1,19 +1,25 @@
-.is-hidden {
+.is-hidden-map {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
+
 p {
     margin: 0;
 }
 
-.container {
+.container-contacts {
     padding-top: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 320px;
 
     @media (min-width: 768px) {
+        width: 768px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -26,21 +32,21 @@ p {
 .contacts {
     background-image: linear-gradient(
     to bottom,
-    var(--primary-text-color) 23%,
-    var(--secondary-bcg-color) 23%);
+    var(--primary-text-color) 25%,
+    var(--secondary-bcg-color) 25%);
 
     @media (min-width: 768px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-text-color) 23%,
-        var(--secondary-bcg-color) 23%);
+        var(--primary-text-color) 50%,
+        var(--secondary-bcg-color) 50%);
     }
 
     @media (min-width: 1200px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-text-color) 15%,
-        var(--secondary-bcg-color) 15%);
+        var(--primary-text-color) 23%,
+        var(--secondary-bcg-color) 23%);
     }
 
     &__set {
@@ -285,7 +291,15 @@ p {
 
     &__icon-arrow {
         margin-left: 10px;
-    
+        fill: var(--primary-text-color);
+
+        &.franchise {
+            fill: var(--accent-color);
+        }
+
+        .contacts__button:hover & {
+            fill: var(--accent-color);
+        }
     }
 }
 
