@@ -294,7 +294,8 @@
     }
 }
 
-.modal-purchase__close-button {
+.modal-purchase__close-button,
+.modal-about__close-button {
     position: absolute;
 
     top: 10px;
@@ -309,7 +310,8 @@
     background: var(--main-bcg-color);
 }
 
-.modal-purchase__close-button-icon {
+.modal-purchase__close-button-icon,
+.modal-about__close-button-icon {
     position: absolute;
     height: 14px;
     width: 14px;
@@ -374,7 +376,7 @@
 
     @media screen and (min-width: 768px) {
         min-width: 0;
-        width: 400px;
+        width: 600px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -400,6 +402,10 @@
         font-size: 30px;
         font-weight: 400;
     }
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .modal-about__second-header {
@@ -417,6 +423,10 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 58px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
     }
 }
 
@@ -447,24 +457,24 @@
     height: 30px;
 
     @media screen and (min-width: 1200px) {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 }
 
-.modal-about__close-button-icon {
-    height: 40px;
-    width: 40px; 
-    padding: 6px;
-    fill: var(--primary-text-color);
+// .modal-about__close-button-icon {
+//     height: 40px;
+//     width: 40px; 
+//     padding: 6px;
+//     fill: var(--primary-text-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         fill: var(--accent-color);
+//     }
+// }
 
 .modal-about__item-header {
     font-family: Titan One;
@@ -473,6 +483,10 @@
     color: var(--accent-color);
 
     margin-left: 10px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 38px;
@@ -486,22 +500,26 @@
     font-family: DM Sans;
     font-size: 12px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         font-size: 14px;
     }
+
+    // @media screen and (min-width: 1200px) {
+    //     font-size: 14px;
+    // }
 }
 
-.modal-about__close-button {
-    position: absolute;
-    top: 0px;
-    right: 50px;
+// .modal-about__close-button {
+//     position: absolute;
+//     top: 0px;
+//     right: 50px;
 
-    border: 0;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    width: 1px;
-    height: 1px;
+//     border: 0;
+//     cursor: pointer;
+//     margin: 0;
+//     padding: 0;
+//     width: 1px;
+//     height: 1px;
 
-    background-color: var(--main-bcg-color);
-}
+//     background-color: var(--main-bcg-color);
+// }
