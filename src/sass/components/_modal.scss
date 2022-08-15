@@ -45,7 +45,7 @@
     background: var(--main-bcg-color);
 
     @media screen and (max-width: 450px) {
-       width: 100vw;
+       width: 100vw-5vw;
     }
 
     @media screen and (min-width: 450px) {
