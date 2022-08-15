@@ -319,4 +319,33 @@
             height: 557px;
         }
     }
+
+    &__button--bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        margin-top: 7px;
+        border: none;
+        border-radius: 50%;
+        transition: background-color var(--transition-function);
+        
+        @media screen and (min-width: 1200px) {
+            width: 26px;
+            height: 26px;
+            margin-top: 20px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--button-hover-color);
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        fill: var(--accent-color);
+    }
 }
