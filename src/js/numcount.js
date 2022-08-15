@@ -1,29 +1,20 @@
-var time = 2; cc = 1;
-$(window).scroll(function(){
-$('#counter').each(function(){
-    var
-    cPos = $(this).offset().top,
-    topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 350) {
-    if (cc < 2) {
-        $('div').each(function(){
-        var
-        i = 1 ,
-        num = $(this).data('num'),
-        step = 1000 * time / num,
-        that = $(this),
-        int = setInterval(function(){
-            if (i <= num) {
-                that.html(i);
-            }
-            else {
-                cc = cc + 2;
-                clearInterval(int);
-            }
-            i++;
-        },step);
-        });
+const counters = document.querySelectorAll('.value');
+const speed = 1000;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('akhi');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 75);
+        }else{
+          counter.innerText = value;
         }
-        }
-    });
+     
+   }
+   
+   animate();
 });
