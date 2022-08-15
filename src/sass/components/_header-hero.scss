@@ -222,7 +222,7 @@
             z-index: 1;
             position: relative;
             display: flex;
-            align-items: center;
+            align-items: top;
         }
         @media screen and (min-width:1200px) {
             margin-top: 40px;
@@ -238,6 +238,13 @@
             width: 213px;
             height: 216px;
         }
+    }
+
+    &__textplace--bottom {
+        display: inline-flex;
+        flex-direction: column;
+        // flex-flow: wrap;
+        padding-top: 35px;
     }
 
     &__text--bottom {
@@ -344,8 +351,48 @@
     }
 
     &__icon {
-        width: 15px;
-        height: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
         fill: var(--accent-color);
+
     }
+}
+
+.text,
+input[type="checkbox"] {
+    // position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    height: 0;
+    order: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1), rotate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="checkbox"]:checked ~ .text {
+    height: 30%;
+    display: block;
+    opacity: 1;
+}
+
+/* Стилизация псевдокнопки */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transform: rotateZ(0deg);
+    transition: rotateZ 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
