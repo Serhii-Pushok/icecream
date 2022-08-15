@@ -223,6 +223,7 @@ p {
     &__button:active {
         background-color: #ECEBEB;
         color: var(--accent-color);
+        transition: background-color var(--transition-function), color var(--transition-function);
     }
 
 
