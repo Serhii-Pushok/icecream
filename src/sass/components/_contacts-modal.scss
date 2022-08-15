@@ -19,7 +19,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 300px;
-        height: 600px;
+        height: 510px;
         background-color: var(--main-bcg-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 6px;
@@ -27,12 +27,12 @@
     
         @media (min-width: 768px) {
             width: 400px;
-            height: 556px;
+            height: 510px;
         }
     
         @media (min-width: 1200px) {
             width: 650px;
-            height: 580px;
+            height: 530px;
         }
     }
 
@@ -59,11 +59,12 @@
     }
 
     &__title {
-        font-size: 42px;
+        font-size: 36px;
         color: var(--accent-color);
         font-family: Titan One, cursive;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 8px;
     
         @media (min-width: 1200px) {
             font-size: 56px;
@@ -78,6 +79,59 @@
         pointer-events: none;
     }
 }
+// tabs
+
+.tabs {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabs>input[type="radio"] {
+    display: none;
+  }
+
+  .tabs>input[type="radio"]:checked+label {
+    background-color: var(--accent-color);
+  }
+
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+    padding: 0;
+    border: transparent;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    // background-color: #eee;
+    // border: 1px solid transparent;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    margin-left: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .tabs>label:first-of-type {
+    margin-left: 0;
+  }
 
 // second modal window 
 
