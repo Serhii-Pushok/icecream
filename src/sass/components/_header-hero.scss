@@ -242,6 +242,7 @@
 
     &__textplace--bottom {
         display: inline-flex;
+        justify-content: flex-start;
         flex-direction: column;
         // flex-flow: wrap;
         padding-top: 35px;
@@ -362,12 +363,11 @@
 
 .text,
 input[type="checkbox"] {
-    // position: absolute;
     pointer-events: none;
     opacity: 0;
     height: 0;
     order: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1), rotate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition-function), height var(--transition-function);
 }
 
 input[type="checkbox"]:checked ~ .text {
@@ -383,8 +383,8 @@ input[type="checkbox"]:checked ~ .text {
     align-items: center;
     order: 2;
   
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     padding: 0;
     margin: 0;
 
@@ -392,7 +392,8 @@ input[type="checkbox"]:checked ~ .text {
     border: 1px solid #eeeeee;
     border-radius: 50%;
     cursor: pointer;
+}
 
-    transform: rotateZ(0deg);
-    transition: rotateZ 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.addition {
+    margin-bottom: 14px;
 }

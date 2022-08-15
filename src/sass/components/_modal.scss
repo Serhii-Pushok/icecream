@@ -45,7 +45,7 @@
     background: var(--main-bcg-color);
 
     @media screen and (max-width: 450px) {
-       width: 100vw;
+       width: (100vw-5vw);
     }
 
     @media screen and (min-width: 450px) {
@@ -296,7 +296,8 @@
 }
 
 .modal-purchase__close-button,
-.modal-about__close-button {
+.modal-about__close-button,
+.modal-franchise__close-button {
     position: absolute;
 
     top: 10px;
@@ -312,7 +313,8 @@
 }
 
 .modal-purchase__close-button-icon,
-.modal-about__close-button-icon {
+.modal-about__close-button-icon,
+.modal-franchise__close-button-icon {
     position: absolute;
     height: 14px;
     width: 14px;
@@ -359,7 +361,8 @@
 
 // Modal about
 
-.modal-about {
+.modal-about,
+.modal-franchise {
     padding: 20px;
     position: absolute;
     top: 50%;
@@ -372,7 +375,7 @@
 
     @media screen and (max-width: 768px) {
         min-width: 0;
-        width: 320px;
+        width: (100vw-15vw);
     }
 
     @media screen and (min-width: 768px) {
@@ -409,7 +412,8 @@
     }
 }
 
-.modal-about__second-header {
+.modal-about__second-header,
+.modal-franchise__header {
     font-family: Titan One;
     font-size: 30px;
     font-weight: 400;
@@ -489,5 +493,49 @@
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
+    }
+}
+
+
+// Modal Franchise
+
+.modal-about {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+
+    background: var(--main-bcg-color);
+
+    @media screen and (max-width: 768px) {
+        min-width: 0;
+        width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 0;
+        width: 600px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 0;
+        width: 820px;
+    }
+}
+
+.modal-franchise__text {
+padding: 20px;
+
+    background: var(--secondary-bcg-color);
+    border-radius: 24px;
+    color: var(--secondary-text-color);
+    font-family: DM Sans;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
     }
 }
