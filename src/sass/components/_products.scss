@@ -82,20 +82,13 @@
  @media (min-width:1200px) {
   flex-basis: calc(100% / 3 - 32px);
    margin-left: 32px;
+   margin-top: 32px;
   padding:165px 61px 60px 61px;
   // width:224px ;
   // padding:211px 32px 40px 32px;
-  margin-bottom: 0px;
  
     }
- @media (min-width:1200px) {
  
-  flex-basis: calc(100% / 3 - 32px);
-  margin-left: 32px;
-  margin-top: 32px;
-  padding:165px 32px 60px 32px;
-
- }
 }
 .products__link--ping{
   background-color: var(--main-bcg-color);
