@@ -3,8 +3,6 @@ p {
 }
 
 .container-contacts {
-    padding-top: 30px;
-    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -172,6 +170,14 @@ p {
         }
     }
 
+    &__item-weekday {
+        margin-bottom: 8px;
+    
+        @media (min-width: 768px) {
+            margin-bottom: 12px;
+        }
+    }
+
     &__item__working-hours-hours {
         color: var(--label-text-color);
     }
@@ -223,6 +229,7 @@ p {
     &__button:active {
         background-color: #ECEBEB;
         color: var(--accent-color);
+        transition: background-color var(--transition-function), color var(--transition-function);
     }
 
 
@@ -298,13 +305,7 @@ p {
 }
 
 
-.weekday {
-    margin-bottom: 8px;
 
-    @media (min-width: 768px) {
-        margin-bottom: 12px;
-    }
-}
 
 .contacts__icon-arrow {
     .contacts__button:hover & {
