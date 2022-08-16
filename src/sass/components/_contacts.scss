@@ -3,13 +3,15 @@ p {
 }
 
 .container-contacts {
-    padding-top: 30px;
-    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 320px;
+    width: 100%;
+
+    @media (min-width: 320px) {
+        width: 320px;
+    }
 
     @media (min-width: 768px) {
         width: 768px;
@@ -60,9 +62,12 @@ p {
         background-color: var(--primary-text-color);
         border-radius: 24px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        width: 280px;
         padding: 40px 32px;
         margin-bottom: 20px;
+
+        @media (min-width: 320px) {
+            width: 280px;
+        }
 
         @media (min-width: 768px) {
             width: 224px;
@@ -172,6 +177,14 @@ p {
         }
     }
 
+    &__item-weekday {
+        margin-bottom: 8px;
+    
+        @media (min-width: 768px) {
+            margin-bottom: 12px;
+        }
+    }
+
     &__item__working-hours-hours {
         color: var(--label-text-color);
     }
@@ -242,6 +255,10 @@ p {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
         
     
         @media (min-width: 768px) {
@@ -277,13 +294,6 @@ p {
         }
     }
 
-    &__button-label {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.31;
-        text-align: center;
-    }
-
     &__icon-arrow {
         margin-left: 10px;
         fill: var(--primary-text-color);
@@ -299,13 +309,7 @@ p {
 }
 
 
-.weekday {
-    margin-bottom: 8px;
 
-    @media (min-width: 768px) {
-        margin-bottom: 12px;
-    }
-}
 
 .contacts__icon-arrow {
     .contacts__button:hover & {
