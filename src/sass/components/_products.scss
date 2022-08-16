@@ -67,7 +67,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 280px;
+  width: 100%;
 
   margin-bottom: 160px;
   
@@ -124,8 +124,14 @@
 }
 .products__link-img{
   position: absolute;
-  top: -30%;
+  top: -15%;
   left: 0;
+  @media (min-width:230px){
+    top: -25%;
+  }
+  @media (min-width:320px){
+    top: -30%;
+  }
   @media (min-width:768px){
     top: -27%;
   }
