@@ -79,12 +79,13 @@
      // transition: transform 0.5s;
      transform-style: preserve-3d; 
      transform: rotateY( 0deg );
+     width: 280px;
    
   }
-  // @media (min-width:280px) {
-  //   width: 280px;
-  //   width: 100%;
-  //     }
+   @media (min-width:280px) {
+     width: 280px;
+   width: 100%;
+       }
  
  @media (min-width:768px) {
   padding:118px 32px 40px 32px;
