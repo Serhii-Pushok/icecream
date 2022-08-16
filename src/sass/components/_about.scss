@@ -79,6 +79,10 @@
       background-image: url('../images/about/bgd-about-mobile@2x.png');
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 121px;
+  }
 }
 .about__text {
   margin-top: 0;
@@ -162,7 +166,6 @@
 
   @media screen and (min-width: 1200px) {
     padding-left: 16px;
-    padding-right: 121px;
   }
 }
 
