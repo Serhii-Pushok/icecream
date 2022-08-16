@@ -282,7 +282,7 @@
     &__decor-circle--big {
         position: absolute;
         right: -20%;
-        bottom: 75px;
+        bottom: -83px;
         width: 346px;
         height: 346px;
         background-color: var(--label-text-color);
@@ -295,13 +295,13 @@
         }
         @media screen and (min-width: 768px){
             left: 32%;
-            bottom: 40px;
+            bottom: 24px;
             width: 335px;
             height: 335px;
         }
         @media screen and (min-width: 1200px){
             left: 517px;
-            bottom: 77px;
+            bottom: 17px;
             width: 534px;
             height: 534px;
         }
@@ -310,18 +310,20 @@
     &__img-icecream {
         position: absolute;
         left: 37%;
-        bottom: 0;
+        bottom: -158px;
         width: 171px;
         height: 410px;
 
         @media screen and (min-width: 768px){
             left: 42%;
+            bottom: -16px;
             width: 143px;
             height: 336px;
         }
 
         @media screen and (min-width: 1200px){
             left: 636px;
+            bottom: -60px;
             width: 236px;
             height: 557px;
         }
