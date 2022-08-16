@@ -68,6 +68,7 @@
         }
     }
         &__cards-ice {
+        overflow: hidden;
         border-radius: 20px;
         transition: all 1s linear;
         @media screen and (min-width: 320px){
@@ -100,6 +101,7 @@
         }
     }
     &__cards-ice-big {
+        overflow: hidden;
         border-radius: 20px;
         transition: all 2s linear;
         @media screen and (min-width: 320px){
@@ -136,25 +138,52 @@
         top: 13px;
         }
     }
-    &__description {
+   /* &__description {
         overflow: hidden;
-                transition: 3s;
-    }
-    &__description:hover &__backdrop-desc {
+        transition: 3s;
+    }*/
+    &__cards-ice:hover > &__backdrop-desc {
        @media screen and (min-width: 768px){
-        opacity: 0.7;
-        display: block;
+        opacity: 0.6;
+        visibility: visible;
        }
+      }
+     &__cards-ice-big:hover > &__backdrop-desc {
+       @media screen and (min-width: 768px){
+        opacity: 0.6;
+        visibility: visible;
+       }
+      }
+     &__backdrop-desc:hover > &__text {
+       @media screen and (min-width: 768px){
+        visibility: visible;
+       }  
     }
     &__backdrop-desc {
         position: absolute;
         transform: translateY(-100%);
-        width: 100%;
-        height: 101%;
+        width: 138px;
+        height: 139px;
         background-color: var(--secondary-bcg-color);
         padding: 10px 15px;
-        display: none;
-        transition: 3s;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s linear;
+    }
+    &__backdrop-desc-big {
+        position: absolute;
+        transform: translateY(-100%);
+        width: 138px;
+        height: 139px;
+        background-color: var(--secondary-bcg-color);
+        padding: 10px 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s linear;
+        @media screen and (min-width: 1200px) {
+        width: 283px;
+        height: 283px; 
+        }
     }
     &__text {
         font-size: 10px;
@@ -162,8 +191,10 @@
         font-weight: 700;
         letter-spacing: 0.03em;
         color: var(--accent-color);
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 1200px){
         font-size: 15px;
-        }
+        visibility: hidden;
+        transition: 0.5s;
+      }
     }
   }
