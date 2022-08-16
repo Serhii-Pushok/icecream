@@ -42,7 +42,7 @@
 
 .products__blok{
   display: flex;
-    justify-content: center;
+    justify-content: space-between;
   flex-direction: column;
     align-items: center;
     padding-left: 0px;
@@ -68,9 +68,10 @@
  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   width: 280px;
+  height: 490px;
 
   margin-bottom: 160px;
   
@@ -81,34 +82,68 @@
   &:last-child{
     margin-bottom: 0px;
   }
+
+  @media (max-width:320px) {
+    width: 90vw;
+      }
  
  @media (min-width:768px) {
   padding:118px 32px 40px 32px;
   margin-bottom: 0px;
   flex-basis: calc(100% / 3 - 16px);
   margin-left: 16px;
+  height: 473px;
     }
  @media (min-width:1200px) {
   flex-basis: calc(100% / 3 - 32px);
    margin-left: 32px;
    margin-top: 32px;
   padding:165px 61px 60px 61px;
+  height: 535px;
   // width:224px ;
   // padding:211px 32px 40px 32px;
  
     }
  
 }
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .products__link--ping{
   background-color: var(--main-bcg-color);
-
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  transform: rotateY(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__link--coffee{
   background-color: var(--icecoffee-bcg-color);
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  transform: rotateY(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__link--green{
   background-color: var(--milkshakes-bcg-color);
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  transform: rotateY(0deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.rotate-card {
+  transform: rotateY(180deg);
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  transform-style: preserve-3d;
+}
+
+.products__content {
+  height: 90%;
+}
+
 .products__button{
   width: 40px;
   height: 40px;
@@ -148,14 +183,22 @@
     line-height: 1.13;
   }
 
+  transform: rotateY(0deg);
+  transition: transform 0ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.rotate-text {
+  transform: rotateY(180deg);
+  // animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+}
+
 .product__link-text--change{
+  margin-top: 32px;
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin:32px 0px;
   text-transform: none;
   font-family: 'DM Sans';
   @media (min-width:768px){
