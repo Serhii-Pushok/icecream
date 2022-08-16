@@ -153,6 +153,11 @@
         background-size: contain;
         border-color: var(--accent-color);
     }
+    .modal-purchase__checkbox-input:hover + &,
+    .modal-purchase__checkbox-input:focus + & {
+        border: solid 2px var(--accent-color)
+    }
+
 }
 
 .modal-purchase__form-lable {
@@ -292,6 +297,11 @@
         background-image: url(../images/modal/checkbox.svg);
         background-size: contain;
         border-color: var(--accent-color);
+    }
+
+    .modal-purchase__radio-input:hover + &,
+    .modal-purchase__radio-input:focus + & {
+        border: solid 2px var(--accent-color)
     }
 }
 
