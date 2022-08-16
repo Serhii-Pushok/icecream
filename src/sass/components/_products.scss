@@ -117,26 +117,22 @@
 
 .products__link--ping{
   background-color: var(--main-bcg-color);
-  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
   transform: rotateY(0deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__link--coffee{
   background-color: var(--icecoffee-bcg-color);
-  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
   transform: rotateY(0deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__link--green{
   background-color: var(--milkshakes-bcg-color);
-  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
   transform: rotateY(0deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rotate-card {
   transform: rotateY(180deg);
-  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
   transform-style: preserve-3d;
 }
 
@@ -177,19 +173,18 @@
   margin-bottom: 32px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+
+  transform: rotateY(0deg);
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
   
   @media (min-width:1200px){
     font-size: 30px;
     line-height: 1.13;
   }
-
-  transform: rotateY(0deg);
-  transition: transform 0ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rotate-text {
   transform: rotateY(180deg);
-  // animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
 }
 
 .product__link-text--change{
@@ -238,7 +233,7 @@
   }
 .products__icon{
   position: absolute;
-    top: -135%;
+    top: -140%;
     left: 13%;
     fill:var(--accent-color) ;
 
