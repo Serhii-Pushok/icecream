@@ -242,15 +242,16 @@
   }
 .products__icon{
   position: absolute;
-    top: -140%;
-    left: 13%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     fill:var(--accent-color) ;
 
   }
-n-mobil{
-    position: absolute;
-    top: -135%;
-    left: 25%;
-    fill:var(--accent-color) ;
-  }
+// n-mobil{
+//     position: absolute;
+//     top: -135%;
+//     left: 25%;
+//     fill:var(--accent-color) ;
+//   }
 
