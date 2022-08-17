@@ -9,7 +9,7 @@ function backToTop() {
         }
     });
 
-    bitton.on('click', (e) => {
+    button.on('click', (e) => {
         e.preventDefaul();
         $('html').animate({ scrollTop: 0 }, 1000);
     })
