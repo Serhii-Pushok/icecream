@@ -27,21 +27,21 @@ p {
 .contacts {
     background-image: linear-gradient(
     to bottom,
-    var(--primary-text-color) 25%,
-    var(--secondary-bcg-color) 25%);
+    var(--primary-text-color) 24%,
+    var(--secondary-bcg-color) 24%);
 
     @media (min-width: 768px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-text-color) 50%,
-        var(--secondary-bcg-color) 50%);
+        var(--primary-text-color) 49%,
+        var(--secondary-bcg-color) 49%);
     }
 
     @media (min-width: 1200px) {
         background-image: linear-gradient(
         to bottom,
-        var(--primary-text-color) 23%,
-        var(--secondary-bcg-color) 23%);
+        var(--primary-text-color) 21%,
+        var(--secondary-bcg-color) 21%);
     }
 
     &__set {
