@@ -134,6 +134,7 @@
 } 
 
 .menu-container {
+    visibility: hidden;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -161,6 +162,7 @@
 
 .menu-container.is-open {
     transform: translateX(0);
+    visibility: visible;
 }
 
 .menu-toggle {
