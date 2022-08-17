@@ -11,6 +11,7 @@
     }
   }
   .advantages__item {
+    list-stile: none;
     text-align: left;
     &:not(:last-child) {
       margin-bottom: 32px;
