@@ -3,12 +3,14 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const mobileMenuList = document.querySelector('.js-mobile-menu');
+  const BuyBtn = document.querySelector('.js-buybtn');
   
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    BuyBtn.classList.toggle('is-none');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'

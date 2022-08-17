@@ -238,3 +238,8 @@
         color: var(--accent-color);
     }
 }
+
+.is-none {
+    transition: opacity var(--transition-function);
+    opacity: 0;
+}
