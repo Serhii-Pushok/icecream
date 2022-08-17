@@ -14,5 +14,4 @@ function backToTop() {
         $('html').animate({ scrollTop: 0 }, 1000);
     })
 }
-
 backToTop();
