@@ -9,6 +9,10 @@ function backToTop() {
         }
     });
 
-}
+    button.on('click', (e) => {
+        e.preventDefaul();
+        $('html').animate({ scrollTop: 0 }, 1000);
+    })
 
+}
 backToTop();
