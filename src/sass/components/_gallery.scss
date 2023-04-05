@@ -104,7 +104,7 @@
     &__cards-ice-big {
         overflow: hidden;
         border-radius: 20px;
-        transition: all 2s linear;
+        transition: all 1s linear;
         @media screen and (min-width: 320px){
         width: 90px;
         height: 90px;
@@ -134,74 +134,9 @@
     }
     &__cards-last {
         position: relative;
-        transition: all 2s linear;
+        transition: all 1s linear;
         @media screen and (min-width: 768px){
         top: 13px;
         }
-    }
-    &__cards-ice:hover > &__backdrop-desc {
-       @media screen and (min-width: 768px){
-        opacity: 0.6;
-        visibility: visible;
-       }
-      }
-     &__cards-ice-big:hover > &__backdrop-desc {
-       @media screen and (min-width: 768px){
-        opacity: 0.6;
-        visibility: visible;
-       }
-      }
-     &__backdrop-desc:hover > &__text {
-       @media screen and (min-width: 768px){
-        visibility: visible;
-       }  
-    }
-    &__backdrop-desc {
-        display: none;
-        @media screen and (min-width: 768px){
-        display: block;
-        position: absolute;
-        transform: translateY(-100%);
-        width: 105px;
-        height: 105px;
-        background-color: var(--secondary-bcg-color);
-        padding: 10px 15px;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        }
-
-        @media screen and (min-width: 1200px) {
-        width: 138px;
-        height: 139px; 
-        }
-        
-    }
-    &__backdrop-desc-big {
-        position: absolute;
-        transform: translateY(-100%);
-        background-color: var(--secondary-bcg-color);
-        padding: 10px 15px;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        width: 214px;
-        height: 214px; 
-        @media screen and (min-width: 1200px) {
-        width: 283px;
-        height: 283px; 
-        }
-    }
-    &__text {
-        font-size: 10px;
-        line-height: 1.55;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        color: var(--accent-color);
-        visibility: hidden;
-        transition: 0.5s;
-        @media screen and (min-width: 1200px){
-        font-size: 15px;
-      }
     }
   }
